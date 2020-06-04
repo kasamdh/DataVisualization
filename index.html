@@ -31,10 +31,12 @@
         //http://bl.ocks.org/weiglemc/6185069
         (function iife(){
           // add the tooltip area to the webpage
-          var tooltip = d3.select(ontainer).append('div').attr('class', 'tooltip').style("opacity", 0);
+          var tooltip = d3.select(container).append('div').attr('class', 'tooltip').style("opacity", 0);
+          // margin 
           var margin = {top: 20, right: 20, bottom: 30, left: 40},
           width = 960 - margin.left - margin.right,
           height = 500 - margin.top - margin.bottom;
+
 
 
 
