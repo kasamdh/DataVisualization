@@ -1,6 +1,221 @@
 body{
 	width: 100%;
 	height: 100%;
-	background-color: lightcyan;
+	background-color: #ffffff;
 	 
+   }
+   
+   div.a{
+	 line-height:200%;
+	 font-size : 24px;
+	 font-weight: bold;
+   }
+   
+   
+   div.b{
+	 list-style: height 100%;
+	 font-size: 20px;
+   
+   }
+   
+   /* h1{
+	 text-shadow: 2px 2px;
+   }
+    */
+   
+   a {
+	 text-decoration: none;
+	 display: inline-block;
+	 padding: 8px 16px;
+   }
+   
+   a:hover {
+	 background-color: #ddd;
+	 color: black;
+   }
+   
+   
+   * {box-sizing:border-box}
+   
+   /* Slideshow*/
+   .slideshow{
+	 max-width: 1000px;
+	 position: relative;
+	 margin: auto;
+   }
+   
+   
+   
+   
+   /* Next & previous buttons */
+   .prev {
+	 cursor: pointer;
+	 position: fixed;
+	 top: 50%;
+	 left:0;
+	 color:black;
+	 font-weight: bold;
+	 font-size: 18px;
+	 transition: 0.6s ease;
+	 border-radius: 0 3px 3px 0;
+   }
+   
+   .next {
+	 cursor: pointer;
+	 position: fixed;
+	 top: 50%;
+	 right:0;
+	 color:black;
+	 font-weight: bold;
+	 font-size: 18px;
+	 transition: 0.6s ease;
+	 border-radius: 0 3px 3px 0;
+   }
+   
+   /* Position the "next button" to the right */
+   .next {
+	 right: 0;
+	 border-radius: 3px 0 0 3px;
+   }
+   
+   /* On hover, add a black background color with a little bit see-through */
+   .prev:hover, .next:hover {
+	 background-color: rgba(0,0,0,0.8);
+   }
+   
+   /* Caption text */
+   .text {
+	 background-color: #f2f2f2;
+	 font-size: 15px;
+	 padding: 8px 12px;
+	 position: fixed;
+	 bottom: 8px;
+	 width: 100%;
+	 text-align: center;
+   }
+   
+   
+   /* Number text (1/3 etc) */
+   .numbertext {
+	 color: 	#000000;
+	 font-size: 20px;
+	 padding: 8px 12px;
+	 position: absolute;
+	 right:0;
+	 margin-right:-10px;
+	 bottom: -20px;
+   }
+   
+   /* The dots/bullets/indicators */
+   .dot {
+	 cursor: pointer;
+	 height: 15px;
+	 width: 15px;
+	 margin: 0 2px;
+	 background-color: #bbb;
+	 border-radius: 50%;
+	 display: inline-block;
+	 transition: background-color 0.6s ease;
+	 
+   }
+   
+   .active, .dot:hover {
+	 background-color: #717171;
+   }
+   
+   /* Fading animation */
+   /* .fade {
+	 -webkit-animation-name: fade;
+	 -webkit-animation-duration: 1.5s;
+	 animation-name: fade;
+	 animation-duration: 1.5s;
+   } */
+   
+   /* @-webkit-keyframes fade {
+	 from {opacity: .4} 
+	 to {opacity: 1}
+   } */
+   
+   @keyframes fade {
+	 from {opacity: .4} 
+	 to {opacity: 1}
+   }
+   
+   /* first chart  */
+   
+   
+   
+   .axis path,.axis line {
+	 fill: none;
+	 stroke: #000;
+	 shape-rendering: crispEdges;
+   }
+   
+   
+   .tooltip {
+	 position: absolute;
+	 width: 2000px;
+	 height: 1000px;
+	 pointer-events: none;
+   }
+   
+   
+   .dotted {
+	 stroke: #000;
+   }
+   
+   
+   
+   /* second chart */
+   
+   .bar {
+	 fill: orange;
+   }
+   
+   .bar:hover {
+	 fill: orangered ;
+   }
+   
+   .x.axis path {
+	 display: none;
+   }
+   
+   .d3-tip {
+	 line-height: 1;
+	 font-weight: bold;
+	 padding: 12px;
+	 background: rgba(0, 0, 0, 0.8);
+	 color: #fff;
+	 border-radius: 2px;
+   }
+   
+   
+   /* Creates a small triangle extender for the tooltip */
+   .d3-tip:after {
+	 box-sizing: border-box;
+	 display: inline;
+	 font-size: 10px;
+	 width: 100%;
+	 line-height: 1;
+	 color: rgba(0, 0, 0, 0.8);
+	 content: "\25BC";
+	 position: absolute;
+	 text-align: center;
+   }
+   
+   /* Style northward tooltips differently */
+   .d3-tip.n:after {
+	 margin: -1px 0 0 0;
+	 top: 100%;
+	 left: 0;
+   }
+   
+   .x.axis path {
+	 display: none;
+   }
+   
+   label {
+	 position: absolute;
+	 top: 10px;
+	 right: 10px;
    }
